@@ -8,13 +8,12 @@ class MrX:
             "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdgMGoeAAAAAECExhXsnXnH8busMCJ3TP4C7wQq&co=aHR0cHM6Ly9hcGlsYXllci5jb206NDQz&hl=tr&v=9pvHvq7kSOTqqZusUzJ6ewaF&size=invisible&cb=mpplbe9iu52o",
             timeout=30,
         )
-        self.clear = os.system("cls" if os.name == "nt" else "clear")
 
     def getCaptcha(self):
 
         url = f"https://apilayer.com/widgets/bincheck?token={self.reCaptchaV3}"
 
-        self.clear
+        os.system("cls" if os.name == "nt" else "clear")
 
         bin = str(input("\n Enter Bin (Max Lenght 6): ").strip())
 
